@@ -1,0 +1,560 @@
+/*
+    1.common css
+    2.spacing css
+    3.font family
+    4.menu css
+    5.bannar css
+    6.service css
+    7.gallary css
+    8.team css
+    9.feedback css
+    10.download css
+    11.footer-top css
+    12.footer-bottom css
+*/
+
+/* ================
+    css table ends
+================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+.full-wrapper {
+    width: 100%;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* =================
+    common css ends 
+=================== */
+
+
+.m-30 {
+    margin: 0 30px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+/* =================
+    spacing css ends 
+=================== */
+
+/*
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Cardo', serif;
+*/
+
+/* =================
+    font family ends 
+=================== */
+
+.menu-bg {
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+.menu-bg .menu {
+    height: 100%;
+}
+
+.menu-bg .menu .logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+
+.menu-bg .menu .logo img {
+    width: 100%;
+    padding-top: 38px;
+}
+
+.menu-bg .menu .menu-list {
+    width: 970px;
+    height: 100px;
+    float: left;
+}
+
+.menu-bg .menu .menu-list ul {
+    float: right;
+}
+
+.menu-bg .menu .menu-list ul li {
+    float: left;
+}
+
+.menu-bg .menu .menu-list ul li a {
+    line-height: 100px;
+    text-transform: uppercase;
+    padding-left: 60px;
+    font-size: 13px;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    transition: all linear 0.4s;
+}
+
+.menu-bg .menu .menu-list ul li a:hover {
+    color: #e84545;
+}
+
+/* =================
+    menu css ends 
+=================== */
+
+.bannar-bg {
+    height: 750px;
+    background: url(../images/bannar.png) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+}
+
+.bannar-bg::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 46, 74, 0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bannar-bg .bannar {
+    height: 750px;
+    text-align: center;
+}
+
+.bannar-bg .bannar h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 71px;
+    padding: 245px 138px 20px;
+}
+
+.bannar-bg .bannar p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    padding: 0 125px 75px;
+    line-height: 33px;
+}
+
+.bannar-bg .bannar a {
+    display: inline-block;
+    color: #fff;
+    background: #e84545;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    line-height: 46px;
+    padding: 0 54px;
+    transition: all linear 0.4s;
+}
+
+.bannar-bg .bannar a:hover {
+    background: #c11a1a;
+}
+
+/* =================
+    bannar css ends 
+=================== */
+
+
+.service-bg {
+    height: 520px;
+    background: #fff;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.service-bg .service {
+    height: 520px;
+    background: #fff;
+}
+
+.service-bg .service .service-item {
+    width: 370px;
+    height: 185px;
+    float: left;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.service-bg .service .service-item h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #2d3033;
+    text-transform: uppercase;
+    padding: 30px 0 15px;
+}
+
+.service-bg .service .service-item p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+    line-height: 21px;
+    padding: 0 25px;
+}
+
+
+/* =================
+    service css ends 
+=================== */
+
+
+.gallary-bg .gallary-item {
+    width: 25%;
+    height: 350px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallary-bg .gallary-item img {
+    width: 100%;
+    height: 350px;
+}
+
+.gallary-bg .gallary-item .gallary-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(232, 69, 69, 0.90);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    text-align: center;
+    transition: all linear 0.4s;
+}
+
+.gallary-bg .gallary-item:hover .gallary-overlay {
+    top: 0;
+}
+
+.gallary-bg .gallary-item .gallary-overlay .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallary-bg .gallary-item .gallary-overlay .overlay-text h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.gallary-bg .gallary-item .gallary-overlay .overlay-text p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+/* =================
+    gallary css ends 
+=================== */
+
+
+.team-bg {
+    height: 580px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.team-bg .team {
+    height: 580px;
+}
+
+.team-bg .team .team-item {
+    width: 270px;
+    height: 580px;
+    float: left;
+}
+
+.team-bg .team .team-item h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    color: #2d3033;
+    text-transform: capitalize;
+    padding-top: 25px;
+}
+
+.team-bg .team .team-item h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.team-bg .team .team-item p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+    line-height: 21px;
+    padding-top: 20px;
+}
+
+.team-bg .team .team-item a i {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #c6cacc;
+    text-align: center;
+    line-height: 40px;
+    color: #c6cacc;
+    margin-top: 25px;
+    transition: all linear 0.4s;
+}
+
+.team-bg .team .team-item a i:hover{
+    border-color: #e84545;
+    color: #e84545;
+}
+
+/* =================
+    team css ends 
+=================== */
+
+.feedback-bg {
+    height: 500px;
+    background: #53354a;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 100px;
+}
+
+.feedback-bg::after {
+    content: '';
+    width: 50%;
+    height: 500px;
+    background: url(../images/feedback-bg.png) no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.feedback-bg .feedback {
+    height: 500px;
+}
+
+.feedback-bg .feedback .feedback-text {
+    width: 500px;
+    height: 500px;
+    float: right;
+    position: relative;
+}
+
+.feedback-bg .feedback .feedback-text q {
+    font-family: 'Cardo', serif;
+    font-size: 36px;
+    font-style: italic;
+    color: #fff;
+    line-height: 42px;
+    padding-top: 105px;
+    display: inline-block;
+}
+
+.feedback-bg .feedback .feedback-text h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.feedback-bg .feedback .feedback-text ul {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 105px;
+}
+
+.feedback-bg .feedback .feedback-text ul li {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    float: left;
+    margin-right: 8px;
+}
+
+.feedback-bg .feedback .feedback-text ul li.active {
+    background: #fff;
+}
+
+.feedback-bg .feedback .feedback-text ul li:last-child {
+    margin-right: 0;
+}
+
+/* =================
+    feedback css ends 
+=================== */
+
+.download-bg {
+    height: 140px;
+    margin-bottom: 100px;
+}
+
+.download-bg .download {
+    height: 140px;
+    text-align: center;
+}
+
+.download-bg .download p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    color: #2d3033;
+}
+
+.download-bg .download h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #2d3033;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.download-bg .download a {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    background: #e84545;
+    text-transform: uppercase;
+    line-height: 46px;
+    padding: 0 83px;
+    margin-top: 35px;
+    transition: all linear 0.4s;
+}
+
+.download-bg .download a:hover{
+    background: #c11a1a;
+}
+
+/* =================
+    download css ends 
+=================== */
+
+.footer-top-bg {
+    height: 250px;
+    background: #3a3e64;
+}
+
+.footer-top-bg .footer-top {
+    height: 250px;
+}
+
+.footer-top-bg .footer-top .footer-top-item {
+    width: 370px;
+    height: 250px;
+    float: left;
+    text-align: center;
+}
+
+.footer-top-bg .footer-top .footer-top-item h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 65px;
+}
+
+.footer-top-bg .footer-top .footer-top-item p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 22.5px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 15px 110px 0;
+}
+
+.footer-top-bg .footer-top .footer-top-item .address{
+    font-style: italic;
+}
+
+.footer-top-bg .footer-top .footer-top-item a i {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 17px;
+    margin-right: 4px;
+}
+
+.footer-top-bg .footer-top .footer-top-item .active {
+    padding: 15px 15px 0;
+}
+
+/* ====================
+    footer-top css ends 
+======================= */
+
+.footer-bottom-bg {
+    height: 95px;
+    background: #313454;
+}
+
+.footer-bottom-bg .footer-bottom {
+    height: 95px;
+    text-align: center;
+}
+
+.footer-bottom-bg .footer-bottom p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 22.5px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 29px 420px 0;
+}
+
+.footer-bottom-bg .footer-bottom p i {
+    color: #e84545;
+}
+
+.footer-bottom-bg .footer-bottom p span {
+    color: #fff;
+}
+
+.footer-bottom-bg .footer-bottom p span a{
+    color: #fff;
+}
+
+/* =======================
+    footer-bottom css ends 
+========================== */
